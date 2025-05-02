@@ -1,0 +1,771 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 1320px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* nav start---------------------------------------------------- */
+#nav {
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+#nav .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav .nav-link {
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 25px;
+    display: inline-block;
+    position: relative;
+
+
+}
+
+#nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #A53DFF;
+    left: 0;
+    bottom: 0;
+    visibility: none;
+    transition: .3s;
+}
+
+#nav .nav-link:hover::after {
+    visibility: visible;
+    width: 100%
+}
+
+#nav ul .nav-link-button {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 25px;
+    background-color: #A53DFF;
+    border-radius: 4px;
+    display: inline-block;
+
+}
+
+#nav ul .nav-link-button:hover {
+    background-color: #fff;
+    border: none;
+    outline: 1px solid #A53DFF;
+    color: #A53DFF;
+    transition: 2s;
+}
+
+/* nav-end */
+/* hero-section-start----------------------------------------- */
+#hero-section {
+    padding: 178px 0px 222px;
+   
+}
+
+#hero-section .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hero-section .hero-left {
+    width: 50%
+}
+
+#hero-section .hero-left .hero-left-heading {
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 117%;
+}
+
+#hero-section .hero-left .hero-left-description {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    margin: 24px 0px;
+}
+
+#hero-section .hero-left-sayhello-button {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 25px;
+    background-color: #A53DFF;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+#hero-section .hero-left-sayhello-button:hover {
+    background-color: #fff;
+    border: none;
+    outline: 1px solid #A53DFF;
+    color: #A53DFF;
+    transition: 2s;
+}
+
+#hero-section .hero-left .row {
+    /* margin:auto; */
+    text-align: center;
+    margin-top: 142px;
+
+
+}
+
+#hero-section .hero-left-achievement {
+    /* margin:0px 12px; */
+    background-color: #EDD8FF;
+    width: 215px;
+    padding: 17px 12px;
+
+}
+
+#hero-section .hero-left-achievement-heading {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+}
+
+#hero-section .hero-left-achievement-title {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+}
+
+#hero-section .hero-right {
+    width: 40%
+}
+
+#hero-section .hero-right img {
+    width: 100%;
+}
+
+/* hero-section-end */
+/* 02:about-start--------------------------------------------- */
+#about {
+    box-shadow: 0 36px 105px 0 rgba(43, 56, 76, 0.1);
+    /* position:relative;
+    bottom:-186px;
+    z-index: 1000; */
+}
+
+#about .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about .about-left {
+    width: 40%;
+
+}
+
+#about .about-left-image {
+    width: 100%
+}
+
+#about .about-right {
+    width: 45%
+}
+
+#about .about-right-heading {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 132%;
+}
+
+#about .about-right-description-one {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+}
+
+#about .about-right-description-two {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    margin-top: 32px;
+    margin-bottom: 17px;
+}
+
+#about .about-right-myproject-button {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 25px;
+    background-color: #A53DFF;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 16px;
+
+}
+
+#about .about-right-myproject-button:hover {
+    background-color: #fff;
+    border: none;
+    outline: 1px solid #A53DFF;
+    color: #A53DFF;
+    transition: 2s;
+}
+
+#about .about-right-downloadcv-button {
+    border: none;
+
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    color: #A53DFF;
+    font-weight: 600;
+
+}
+
+#about .about-right-downloadcv-button:hover {
+    outline: 1px solid #A53DFF;
+    transition: 2s;
+}
+
+/* 02:about-end */
+/* 03:process-start----------------------------------------------------------- */
+#process {
+    background-color: #F0F1F3;
+    padding:248px 0px 148px;
+    /* height: 700px; */
+}
+
+#process .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#process .process-left-heading {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 117%;
+}
+
+#process .process-left-description-one {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+#process .process-left-description-two {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+
+}
+
+#process .process-left {
+    width: 40%
+}
+
+#process .process-right {
+    width: 55%
+}
+
+#process .process-right .row {
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px;
+
+}
+
+#process .card-container {
+    width: 312px;
+    height: 276px;
+    border-radius: 12px;
+    padding: 32px;
+    background-color: #fff;
+
+}
+
+#process .card-heading {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+#process .card-description {
+    font-family: "Work Sans", sans-serif;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+/* 03:process-end */
+/* 04:portfolio-start-------------------------------------------------------- */
+#portfolio {
+    margin: 100px 0px;
+}
+
+#portfolio .portfolio-heading {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 117%;
+    text-align: center;
+
+}
+
+#portfolio .portfolio-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 70px;
+}
+#portfolio .row{
+    justify-content: space-between;
+    align-items: center;
+    margin:24px 0px;
+}
+#portfolio .card-container {
+    /* border: 1px solid gray; */
+    border-radius: 8px;
+    padding: 0px 0px 32px 0px;
+    width: 424px;
+    height: 476px;
+    box-shadow: 0 12px 64px 0 rgba(28, 25, 25, 0.12);
+}
+
+#portfolio .card-contains {
+    padding: 32px;
+}
+
+#portfolio .card-heading {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 133%;
+    margin-bottom: 4px;
+}
+
+#portfolio .card-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 133%;
+    
+
+}
+
+#portfolio .card-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    margin: 12px 0px 20px 0px;
+}
+#portfolio .card-casestudy-button{
+    color:#A53DFF;
+    border: none;
+    outline:1px solid #A53DFF;
+    padding:12px 24px;
+    display: inline-block;
+    border-radius: 10px;
+}
+#portfolio .portfolio-moreproject-button{
+    display: inline-block;
+    margin-top: 24px;
+    /* margin: auto; */
+    border-radius: 4px;
+    padding: 12px 24px;
+    background-color: #A53DFF;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+   
+}
+#portfolio .portfolio-moreproject-button:hover{
+    background-color: #fff;
+    color:#A53DFF;
+    border: none;
+    outline:1px solid #A53DFF;
+    transition: 2s;
+}
+/* 04:portfolio-end */
+/* 05:project-idea-start--------------------------------------------------- */
+#project-idea{
+    padding:100px 0px 180px 0px;
+    background-color: #132238;
+    color:#fff
+}
+#project-idea .project-idea-heading{
+font-weight: 600;
+font-size: 48px;
+line-height: 117%;
+text-align: center;
+}
+#project-idea .project-idea-description{
+font-weight: 400;
+font-size: 18px;
+line-height: 133%;
+text-align: center;
+margin:32px 0px;
+}
+#project-idea .project-idea-worktogether-button{
+    border-radius: 4px;
+padding: 12px 24px;
+display: inline-block;
+color:#fff;
+background-color: #A53DFF;
+margin:auto
+}
+#project-idea .project-idea-worktogether-button:hover{
+    border: none;
+    outline:1px solid #A53DFF;
+    background-color: #fff;
+    color:#A53DFF;
+    transition: 2s;
+}
+/* 05:project-idea-end */
+/* 06:blog-start-------------------------------------------------- */
+#blog{
+    margin:100px 0px;
+}
+#blog .blog-heading{
+font-weight: 600;
+font-size: 48px;
+line-height: 117%;
+text-align: center;
+margin-bottom: 24px;
+}
+#blog .blog-description{
+font-weight: 400;
+font-size: 18px;
+line-height: 144%;
+text-align: center;
+margin-bottom: 70px;
+}
+#blog .row{
+    justify-content: space-between;
+    align-items: center;
+}
+#blog .card-container{
+    box-shadow: 0 12px 64px 0 rgba(28, 25, 25, 0.12);
+border-radius: 8px;
+width: 312px;
+height: 350px;
+}
+#blog .card-contains{
+    padding:24px;
+
+}
+#blog .card-survey{
+    font-family: "Work Sans", sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+}
+#blog .card-description{
+font-weight: 500;
+font-size: 18px;
+line-height: 133%;
+color: #333;
+margin-top: 8px;
+}
+#blog .cicle-container{
+    margin: 24px 0px;
+}
+#blog .cicle{
+    height:9px;
+    display: inline-block;
+    width:9px;
+    background-color: black;
+    border-radius: 50%;
+
+}
+/* 06:blog-end */
+/* 07:what i do-start---------------------------------------------------------------------- */
+#what-i-do{
+    margin:150px 0px; 
+}
+#what-do-i .row{
+    justify-content: space-between;
+    align-items: center;
+}
+#what-do-i .what-do-i-left{
+    width:40%;
+}
+#what-do-i .what-do-i-left-heading{
+font-weight: 600;
+font-size: 48px;
+line-height: 117%;
+color: #333;
+}
+#what-do-i .what-do-i-left-description-one{
+    font-family:"Work Sans", sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 133%;
+}
+#what-do-i .what-do-i-left-description-two{
+    font-family:"Work Sans", sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 133%;
+margin-top: 16px;
+}
+#what-do-i .what-do-i-left-sayhello-button{
+    display: inline-block;
+    padding:12px 24px;
+    background-color: #A53DFF;
+    color:#fff;
+    font-weight: 500;
+    margin-top: 50px;
+    border-radius: 4px;
+}
+#what-do-i .what-do-i-left-sayhello-button:hover{
+    border: none;
+    outline: 1px solid #A53DFF;
+    background-color: #fff;
+    color:#A53DFF;
+    transition: 2s;
+}
+#what-do-i .what-do-i-right{
+    width:40%
+}
+
+#what-do-i .card-container{
+    border-radius: 6px;
+padding: 32px;
+width: 648px;
+height: 176px;
+box-shadow: 0 32px 96px 0 rgba(28, 25, 25, 0.16);
+border-left:7px solid #A53DFF;
+margin:24px 0px;
+}
+#what-do-i .card-description{
+    font-family:"Work Sans", sans-serif;
+
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+margin-top: 16px;
+}
+#what-do-i .card-description:nth-child(2) {
+    border-left:none;
+    
+
+}
+/* what-i-do-end */
+/* 08:happy-clients-start-------------------------------------------------------------- */
+#happy-clients{
+    margin:100px 0px;
+}
+#happy-clients .heading{
+font-weight: 600;
+font-size: 48px;
+line-height: 117%;
+text-align: center;
+}
+#happy-clients .description{
+    margin-top: 24px;
+ font-family:"Work Sans", sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 133%;
+text-align: center;
+}
+#happy-clients .row{
+    width:100%;
+    /* background-color: #A53DFF; */
+    justify-content: space-between;
+    align-items: center;
+}
+/* 08:happy-clients-end */
+/* 09:testimonial-start------------------------------------------------------------------------- */
+#testimonial{
+    margin:0px 0px 150px;
+}
+#testimonial .heading{
+    text-align: center;
+font-weight: 600;
+font-size: 48px;
+line-height: 117%;
+color: #333;
+    /* margin: auto; */
+}
+#testimonial .description{
+ font-family:"Work Sans", sans-serif;
+
+font-weight: 400;
+font-size: 18px;
+line-height: 133%;
+text-align: center;
+opacity:.5;
+margin:24px 0px 70px 0px;
+}
+#testimonial .details{
+    text-align: center;
+}
+#testimonial .owner-name{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 144%;
+    color: #000;
+    text-align: center;
+    margin:24px 0px 8px 0px;
+}
+#testimonial .company-address{
+    text-align: center;
+font-weight: 300;
+font-size: 16px;
+line-height: 150%;
+color: #000;
+}
+/* 09:testimonial-end */
+/* 10:contact-start---------------------------------------------------------------------- */
+#contact{
+    padding:88px;
+    box-shadow: 0 59px 124px 0 rgba(0, 0, 0, 0.12);
+}
+#contact .row{
+    justify-content: space-around;
+}
+#contact .contact-left{
+    width:40%
+}
+#contact .contact-left .heading{
+font-weight: 600;
+font-size: 38px;
+line-height: 132%;
+}
+#contact .contact-left .description{
+font-weight: 400;
+font-size: 18px;
+line-height: 133%;
+margin:16px 0px 35px;
+}
+#contact .contact-left .card-container{
+    border-radius: 10px;
+padding: 24px;
+width: 336px;
+height: 96px;
+box-shadow: 0 12px 64px 0 rgba(28, 25, 25, 0.12);
+margin:12px 0px;
+}
+#contact .contact-left .card-contains{
+    display: flex;
+    align-items: center;
+}
+#contact .contact-left .card-contains .image{
+    margin-right:13px;
+}
+#contact .contact-left .card-details{
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+}
+#contact .contact-right{
+    width:50%;
+}
+#contact .contact-right .contact-right-title{
+font-weight: 400;
+font-size: 18px;
+line-height: 133%;
+margin-bottom: 50px;
+}
+#contact .contact-right .input-field{
+    display:inline-block;
+
+    width: 560px;
+    height: 38px;
+
+    padding:14px;
+    border:none;
+    border-bottom:2px solid #A53DFF;
+    margin:24px 0px;
+font-weight: 400;
+font-size: 18px;
+}
+#contact .contact-right .input-field-optional{
+    display:inline-block;
+
+    width: 280px;
+    height: 38px;
+    padding:14px;
+    border:none;
+    border-bottom:2px solid #A53DFF;
+    margin:24px 0px;
+font-weight: 400;
+font-size: 18px;
+}
+#contact .contact-right .submitbutton{
+    color:#fff;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: #A53DFF;
+    padding: 12px 24px;
+    margin-top:50px;
+}
+#contact .contact-right .submitbutton:hover{
+    background-color: #fff;
+    color:#A53DFF;
+    transition: 2s;
+    outline:1px solid #A53DFF
+}
+/* 10:contact-end */
+/* 11:footer-start------------------------------------------------------------------ */
+#footer{
+    padding:196px 0px 86px;
+    background-color: #132238;
+}
+#footer .row{
+    justify-content: space-between;
+    align-items: center;
+}
+#footer .footer-link{
+    color:#fff;
+    display: inline-block;
+    padding:12px;
+
+}
+#footer .footer-link:hover{
+    text-decoration: underline;
+    color:#A53DFF;
+}
+#footer .footer-common-text{
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color:#fff
+}
+/* 11:footer-end */
