@@ -1,14 +1,5 @@
-@media (max-width: 991.98px) { 
-    .container{
-        width:100%
-    }
-    #nav{
-        width:100%;
-    }
-    #nav ul li .nav-link{
-        display: none;
-    }
-    #nav button{
-        display: block;
-    }
- }
+@media (max-width: 991.98px) {
+  #nav .row {
+    flex-direction: column;
+  }
+}
